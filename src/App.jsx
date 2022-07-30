@@ -19,6 +19,9 @@ export default function App() {
         <li>Is maintained by Facebook</li>
         <li>Powers thousands of enterprose apps, including mobile apps</li>
       </ul>
+      <footer>
+        <small>© 2022 Cuyugan Development. All rights reserved.</small>
+      </footer>
     </div>
   )
 }
