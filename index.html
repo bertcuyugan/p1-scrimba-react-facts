@@ -11,3 +11,38 @@
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
+
+
+
+
+<!--
+these scripts are required in order for your static webiste cade to call/interact with React, without it your code will not work.
+
+
+CDN links - https://reactjs.org/docs/cdn-links.html
+
+<script crossorigin src="https://unpkg.com/react@17/umd/react.development.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+<script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
+
+
+<body>
+        <h1>Hello, React!</h1>
+        <script src="index.js" type="text/babel"></script>
+</body>
+
+adding this part - type="text/babel"
+
+
+** static webpages need to be able to access the ReactDOM
+** the code to access ReactDOM and render the page is
+
+ReactDOM.render(<h1>Hello everyone!</h1>, document.getElementById("root")) 
+  ** the "root" is the "id" of index.html that we want to render when we call ReactDOM
+
+-->
+
+
+
+
