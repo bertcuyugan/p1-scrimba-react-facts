@@ -1,30 +1,22 @@
 import { useState } from 'react'
-import reactlogo from "./assets/reactjs-icon1.png"
 import './App.css'
+import Navbar from './Navbar'
+import MainContent from './MainContent'
+import Footer from './Footer'
+
+
 
 export default function App() {
   const [count, setCount] = useState(0)
-
   return (
     <div className="App">
-
-      <img src={reactlogo} alt="react-icon" width="80px" />
-
-      <h1>Fun Facts about React</h1>
-
-      <ul>
-        <li>Was first released in 2013</li>
-        <li>Was originally created by Jordan Walke</li>
-        <li>Has well over 100K starts on Github</li>
-        <li>Is maintained by Facebook</li>
-        <li>Powers thousands of enterprose apps, including mobile apps</li>
-      </ul>
-      <footer>
-        <small>© 2022 Cuyugan Development. All rights reserved.</small>
-      </footer>
+      <Navbar />
+      <MainContent />
+      <Footer />
     </div>
   )
 }
+
 
 
 
@@ -34,7 +26,6 @@ HTML for our section project. Check the Google slide for
 what you're trying to build.
 
 We'll be adding styling to it later.
-
 Hints:
 * The React logo is a file in the project tree, so you can
   access it by using `src="./react-logo.png" in your image
